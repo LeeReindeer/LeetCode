@@ -1,4 +1,4 @@
-package moe.leer.leetcode.p008.p008;
+package moe.leer.leetcode.p008;
 
 import moe.leer.leetcode.p008.Solution;
 
