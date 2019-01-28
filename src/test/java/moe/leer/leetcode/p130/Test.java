@@ -1,5 +1,7 @@
 package moe.leer.leetcode.p130;
 
+import moe.leer.leetcode.Util;
+
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
@@ -34,7 +36,7 @@ public class Test {
   public void testCase1() {
     moe.leer.leetcode.p130.Solution solution = new Solution();
     solution.solve(board1);
-    System.out.println(Arrays.deepToString(board1));
+    System.out.println(Util.prettyDeepToString(board1));
 
     assertEquals('X', board1[1][1]);
     assertEquals('X', board1[1][2]);
@@ -48,7 +50,7 @@ public class Test {
   public void testCase2() {
     moe.leer.leetcode.p130.Solution solution = new Solution();
     solution.solve(board2);
-    System.out.println(Arrays.deepToString(board2));
+    System.out.println(Util.prettyDeepToString(board2));
     assertEquals('O', board2[1][1]);
     assertEquals('O', board2[1][2]);
     assertEquals('O', board2[2][1]);
@@ -60,7 +62,7 @@ public class Test {
   public void testCase3() {
     moe.leer.leetcode.p130.Solution solution = new Solution();
     solution.solve(board3);
-    System.out.println(Arrays.deepToString(board3));
+    System.out.println(Util.prettyDeepToString(board3));
 
     assertEquals('X', board3[2][2]);
   }

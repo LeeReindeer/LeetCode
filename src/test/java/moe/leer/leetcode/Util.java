@@ -1,5 +1,7 @@
 package moe.leer.leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author leer
  * Created at 1/28/19 8:39 PM
@@ -17,4 +19,25 @@ public class Util {
     }
     return chars;
   }
+
+  /**
+   * 1d or 1d array to pretty string
+   */
+  public static String prettyDeepToString(Object[] objects) {
+    String s = Arrays.deepToString(objects);
+    if (!s.contains("],")) return s;
+    StringBuilder sb = new StringBuilder();
+    char[] chars = s.toCharArray();
+    for (int i = 0; i < s.length() - 1; i++) {
+      sb.append(chars[i]);
+      if (chars[i] == ']' && chars[i + 1] == ',') {
+        sb.append(',');
+        i++;
+        sb.append("\n");
+      }
+    }
+    sb.append(']');
+    return sb.toString();
+  }
+
 }
