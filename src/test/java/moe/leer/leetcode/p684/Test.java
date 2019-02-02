@@ -1,4 +1,4 @@
-package moe.leer.leetcode;
+package moe.leer.leetcode.p684;
 
 import moe.leer.leetcode.p684.Solution;
 
