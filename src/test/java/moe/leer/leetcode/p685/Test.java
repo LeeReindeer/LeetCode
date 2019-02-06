@@ -36,4 +36,15 @@ public class Test {
         {1, 5}
     }, new int[]{4, 1});
   }
+
+  @org.junit.Test
+  public void testTwoParents() {
+    test(new int[][]{
+        {4, 2},
+        {1, 5},
+        {5, 2},
+        {5, 3},
+        {2, 4}
+    }, new int[]{4, 2});
+  }
 }

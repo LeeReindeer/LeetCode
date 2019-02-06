@@ -28,10 +28,10 @@ public class Solution {
       int root1 = find(u);
       int root2 = find(v);
       if (root1 != root2) {
-        if (root2 != v) { // not unioned
+        if (root2 != v) { // has unioned
           ans1 = edge; // two parents
         } else {
-          // union
+          // union, same as parent[v] = root1, just a path compress
           parent[root2] = root1;
         }
       } else { // cycle
@@ -44,7 +44,7 @@ public class Solution {
     if (ans2 == null)
       return ans1;
 
-    // if has two parents and cycle, pick the first two parents edge
+    // if has both two parents and cycle or neither, pick the first two parents edge
     for (int[] edge : edges) {
       if (edge[1] == ans1[1])
         return edge;
