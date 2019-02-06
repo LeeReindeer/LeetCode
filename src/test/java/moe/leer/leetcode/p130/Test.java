@@ -2,8 +2,6 @@ package moe.leer.leetcode.p130;
 
 import moe.leer.leetcode.Util;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.assertEquals;
 
 /**

@@ -1,18 +1,15 @@
 package moe.leer.leetcode.p008;
 
-import moe.leer.leetcode.p008.Solution;
-
 import static org.junit.Assert.assertEquals;
 
 /**
- * @author leer
- * Created at 1/27/19 6:12 PM
+ * @author leer Created at 1/27/19 6:12 PM
  */
 public class Test {
 
   @org.junit.Test
   public void testAtoi() {
-    Solution solution = new Solution();
+    moe.leer.leetcode.p008.Solution solution = new Solution();
 
     assertEquals(solution.myAtoi("0000000000012345678"), 12345678);
     assertEquals(solution.myAtoi("+0000000000012345678"), 12345678);
