@@ -40,4 +40,10 @@ public class Util {
     return sb.toString();
   }
 
+  public static void printArray(int[] a, int len) {
+    for (int i = 0; i < len; i++) {
+      System.out.printf("%d ", a[i]);
+    }
+    System.out.println();
+  }
 }
