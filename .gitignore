@@ -39,3 +39,6 @@ gradle-app.setting
 .vscode/
 .classpath
 .project
+.settings/
+.idea/
+bin/
