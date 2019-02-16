@@ -15,13 +15,29 @@ package moe.leer.leetcode.p189;
  */
 public class Solution {
 
-  //TODO O(n)
-  public void rotateInPlace(int[] nums, int k) {
+  public void rotate3(int[] nums, int k) {
+    k %= nums.length;
     if (k == 0 || nums.length <= 1) return;
   }
 
-  // in-place O(k*n)
+  //Time: O(n), space: O(n)
+  public void rotate2(int[] nums, int k) {
+    k %= nums.length;
+    if (k == 0 || nums.length <= 1) return;
+
+    int[] aux = new int[nums.length];
+    for (int i = 0; i < nums.length; i++) {
+      aux[(i + k) % nums.length] = nums[i];
+    }
+    for (int i = 0; i < nums.length; i++) {
+      nums[i] = aux[i];
+    }
+  }
+
+  // in-place
+  // Time: O(k*n)
   public void rotate(int[] nums, int k) {
+    k %= nums.length;
     if (k == 0 || nums.length <= 1) return;
     for (int i = 1; i <= k; i++) {
       int tmp = nums[nums.length - 1];
