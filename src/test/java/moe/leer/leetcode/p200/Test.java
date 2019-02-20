@@ -1,6 +1,6 @@
 package moe.leer.leetcode.p200;
 
-import moe.leer.leetcode.Util;
+import moe.leer.leetcode.TestUtil;
 import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
@@ -16,14 +16,14 @@ public class Test {
 
   @Before
   public void init() {
-    grid1 = Util.int2char(new int[][]{
+    grid1 = TestUtil.int2char(new int[][]{
         {1, 1, 1, 1, 0},
         {1, 1, 0, 1, 0},
         {1, 1, 0, 0, 0},
         {0, 0, 0, 0, 0},
     }, 4, 5);
 
-    grid2 = Util.int2char(new int[][]{
+    grid2 = TestUtil.int2char(new int[][]{
         {1, 1, 0, 0, 0},
         {1, 1, 0, 0, 0},
         {0, 0, 1, 0, 0},

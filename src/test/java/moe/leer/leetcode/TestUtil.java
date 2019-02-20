@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author leer
  * Created at 1/28/19 8:39 PM
  */
-public class Util {
+public class TestUtil {
   public static char[][] int2char(int[][] g, int row, int col) {
     char[][] chars = new char[row][col];
     if (row == 0) {
