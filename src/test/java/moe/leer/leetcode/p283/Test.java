@@ -1,6 +1,7 @@
 package moe.leer.leetcode.p283;
 
-import static org.junit.Assert.*;
+import moe.leer.leetcode.TestUtil;
+import org.junit.Assert;
 
 /**
  * @author leer
@@ -8,11 +9,27 @@ import static org.junit.Assert.*;
  */
 public class Test {
 
-  public void test1() {
+  public static final int LEN = 100000;
 
+  @org.junit.Test
+  public void test1() {
+    int[] a = TestUtil.generateIntArray(LEN, LEN);
+    for (int i = 10000; i < a.length / 2; i++) {
+      a[i] = 0;
+    }
+    Solution solution = new Solution();
+    solution.moveZeroes(a);
+    Assert.assertEquals(0, a[LEN - 1]);
   }
 
+  @org.junit.Test
   public void test2() {
-
+    int[] a = TestUtil.generateIntArray(LEN, LEN);
+    for (int i = 10000; i < a.length / 2; i++) {
+      a[i] = 0;
+    }
+    Solution solution = new Solution();
+    solution.moveZeroes2(a);
+    Assert.assertEquals(0, a[LEN - 1]);
   }
 }
