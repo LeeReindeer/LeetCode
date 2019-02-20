@@ -1,6 +1,7 @@
 package moe.leer.leetcode;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * @author leer
@@ -45,5 +46,49 @@ public class TestUtil {
       System.out.printf("%d ", a[i]);
     }
     System.out.println();
+  }
+
+  public static void swap(Comparable[] a, int i, int j) {
+    Comparable t = a[i];
+    a[i] = a[j];
+    a[j] = t;
+  }
+
+  /**
+   * Generate an int array with length [size], every element is in 0 ~ range - 1.
+   *
+   * @param size  size of array
+   * @param range top range of array element
+   * @return the generated array
+   */
+  public static int[] generateIntArray(int size, int range) {
+    Random random = new Random();
+    int[] res = new int[size];
+    for (int i = 0; i < res.length; i++) {
+      res[i] = random.nextInt(range);
+    }
+    return res;
+  }
+
+
+  /**
+   * Is array sort in ascending order
+   *
+   * @param a the array
+   * @return whether soted in ascending order
+   */
+  public static boolean isSorted(Comparable[] a) {
+    for (int i = 0; i < a.length - 1; i++) {
+      if (a[i].compareTo(a[i + 1]) > 0) return false;
+    }
+    return true;
+  }
+
+  public static void shuffleArray(Comparable[] a) {
+    Random random = new Random();
+    int len = a.length;
+    for (int i = 0; i < len; i++) {
+      swap(a, random.nextInt(len), random.nextInt(len));
+    }
   }
 }
