@@ -6,6 +6,7 @@ package moe.leer.leetcode.p014;
  */
 public class Solution {
 
+  // Vertical scanning, compare char from diff string at same index
   public String longestCommonPrefix(String[] strs) {
     if (strs.length == 0 || strs[0].length() == 0) return "";
     StringBuilder sb = new StringBuilder();
@@ -28,5 +29,20 @@ public class Solution {
       }
     }
     return sb.toString();
+  }
+
+  // more simple vertical scanning
+  public String verticalScanning(String[] strs) {
+    if (strs.length == 0 || strs[0].length() == 0) return "";
+    String prefix = strs[0];
+    for (int i = 0; i < prefix.length(); i++) {
+      char ch = prefix.charAt(i);
+      for (int j = 1; j < strs.length; j++) {
+        if (i == strs[j].length() || strs[j].charAt(i) != ch) {
+          return prefix.substring(0, i);
+        }
+      }
+    }
+    return prefix;
   }
 }
