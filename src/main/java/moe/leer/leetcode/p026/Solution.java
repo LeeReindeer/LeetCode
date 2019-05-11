@@ -22,4 +22,21 @@ public class Solution {
     }
     return newLen;
   }
+
+  // two pointer
+  public int removeDuplicates2(int[] nums) {
+    int len = nums.length;
+    if (len < 2) return len;
+    int i = 0; // slower pointer
+    int j = 1;
+    while (j < len) {
+      if (nums[i] == nums[j]) {
+        j++;
+      } else {
+        // forward the slower pointer when new value occurred
+        nums[++i] = nums[j++];
+      }
+    }
+    return i + 1;
+  }
 }

@@ -19,4 +19,14 @@ public class Test {
 
     assertEquals(5, len);
   }
+
+  @org.junit.Test
+  public void testCase2() {
+    int[] a = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+    moe.leer.leetcode.p026.Solution solution = new Solution();
+    int len = solution.removeDuplicates2(a);
+    TestUtil.printArray(a, len);
+
+    assertEquals(5, len);
+  }
 }
