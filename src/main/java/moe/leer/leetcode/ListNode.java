@@ -13,11 +13,17 @@ public class ListNode {
   }
 
   public static void printLinkedList(ListNode head) {
+    System.out.print(listToString(head));
+  }
+
+  public static String listToString(ListNode head) {
+    StringBuilder sb = new StringBuilder();
     while (head != null) {
-      System.out.print(head.val);
+      sb.append(head.val);
       head = head.next;
-      if (head != null) System.out.print("->");
+      if (head != null) sb.append("->");
     }
-    System.out.println();
+    sb.append("\n");
+    return sb.toString();
   }
 }
