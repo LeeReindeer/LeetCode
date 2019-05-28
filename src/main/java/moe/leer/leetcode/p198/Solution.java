@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author leer
  * Created at 5/25/19 2:40 PM
  */
-class Solution {
+public class Solution {
   // if we robbed i-th houses, we can't rob i-1 th hourse
   // dp[i] = max(dp[i-2]+nums[i], dp[i-1])
   public int rob(int[] nums) {
