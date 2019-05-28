@@ -15,11 +15,6 @@ package moe.leer.leetcode.p189;
  */
 public class Solution {
 
-  public void rotate3(int[] nums, int k) {
-    k %= nums.length;
-    if (k == 0 || nums.length <= 1) return;
-  }
-
   //Time: O(n), space: O(n)
   public void rotate2(int[] nums, int k) {
     k %= nums.length;
