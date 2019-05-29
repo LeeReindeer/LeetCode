@@ -29,17 +29,12 @@ public class Solution {
     ListNode prev = new ListNode(0), head;
     head = prev;
     int c = 0;
-    while (l1 != null && l2 != null || c != 0) {
+    while (l1 != null || l2 != null || c != 0) {
       ListNode cur = new ListNode(0);
       int sum = ((l1 == null) ? 0 : l1.val) + ((l2 == null) ? 0 : l2.val) + c;
-      cur.val = sum % 10;
-      c = sum / 10;
-//      if (sum >= 10) {
-//        c = 1;
-//        cur.val -= 10;
-//      } else {
-//        c = 0;
-//      }
+      cur.val = sum;
+      c = sum >= 10 ? 1 : 0;
+      if (sum >= 10) cur.val -= 10;
       prev.next = cur;
       prev = cur;
       if (l1 != null) l1 = l1.next;
@@ -54,13 +49,13 @@ public class Solution {
     ListNode l12 = new ListNode(3);
     ListNode l2 = new ListNode(5);
     ListNode l21 = new ListNode(6);
-    ListNode l22 = new ListNode(4);
+    ListNode l22 = new ListNode(6);
     l1.next = l11;
     l11.next = l12;
     l2.next = l21;
     l21.next = l22;
     Solution solution = new Solution();
-    ListNode head = solution.addTwoNumbers(l1, l2);
+    ListNode head = solution.addTwoNumbers2(l1, l2);
     ListNode.printLinkedList(head);
   }
 }
