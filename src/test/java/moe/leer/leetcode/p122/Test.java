@@ -23,4 +23,12 @@ public class Test {
     int max = solution.maxProfit(prices);
     assertEquals(0, max);
   }
+
+  @org.junit.Test
+  public void testMethod2() {
+    moe.leer.leetcode.p122.Solution solution = new Solution();
+    int[] prices = { 7, 6, 4, 3, 1 };
+    int max = solution.maxProfit2(prices);
+    assertEquals(0, max);
+  }
 }
