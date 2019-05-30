@@ -28,25 +28,27 @@ public class Solution {
   }
 
   // Time: O(mn), Space: O(n)
-  // store the previous col, calculate col by col
+  // store the previous row/col, calculate row/col by row/col
   public int uniquePaths2(int m, int n) {
     if (m == 0 || n == 0) return 0;
     if (m == 1 || n == 1) return 1;
-    int[] dp = new int[n];
+    int min = m > n ? n : m;
+    int max = m <= n ? n : m;
+    int[] dp = new int[min];
     Arrays.fill(dp, 1);
-    for (int i = 1; i < m; i++) {
-      for (int j = 1; j < n; j++) {
+    for (int i = 1; i < max; i++) {
+      for (int j = 1; j < min; j++) {
         dp[j] += dp[j - 1];
       }
       System.out.println(Arrays.toString(dp));
     }
-    return dp[n - 1];
+    return dp[min - 1];
   }
 
   public static void main(String[] args) {
     Solution solution = new Solution();
     System.out.println(solution.uniquePaths(3, 2));
     System.out.println(solution.uniquePaths(3, 3));
-    System.out.println(solution.uniquePaths(7, 3));
+    System.out.println(solution.uniquePaths(3, 7));
   }
 }
