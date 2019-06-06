@@ -37,19 +37,45 @@ class Solution {
     }
     for (int i = 1; i <= n; i++) {
       for (int j = 1; j <= sum; j++) {
-        dp[i][j] = dp[i - 1][j];
         int w = nums[i - 1];
         if (j >= nums[i - 1]) {
-          dp[i][j] = dp[i][j] || dp[i - 1][j - w]; // choose the available one
+          dp[i][j] = dp[i - 1][j] || dp[i - 1][j - w]; // choose the available one
+        } else {
+          dp[i][j] = dp[i - 1][j];
         }
       }
     }
     return dp[n][sum];
   }
 
+  // Space: O(sum)
+  public boolean canPartition2(int[] nums) {
+    int n = nums.length;
+    int sum = 0;
+    for (int i : nums) {
+      sum += i;
+    }
+    if (sum % 2 != 0) return false;
+    sum /= 2;
+    boolean[] dp = new boolean[sum + 1];
+    // dp init
+    dp[0] = true;
+    // dp transition
+    for (int i = 1; i < n + 1; i++) {
+      for (int j = sum; j >= 1; j--) {
+        if (j >= nums[i - 1]) {
+          dp[j] = dp[j] || dp[j - nums[i - 1]];
+        }
+      }
+    }
+    return dp[sum];
+  }
+
   public static void main(String[] args) {
     Solution solution = new Solution();
     System.out.println(solution.canPartition(new int[]{1, 5, 11, 5}));
+    System.out.println(solution.canPartition2(new int[]{1, 5, 11, 5}));
     System.out.println(solution.canPartition(new int[]{1, 2, 3, 5}));
+    System.out.println(solution.canPartition2(new int[]{1, 2, 3, 5}));
   }
 }
