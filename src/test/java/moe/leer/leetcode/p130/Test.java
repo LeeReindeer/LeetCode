@@ -30,6 +30,12 @@ public class Test {
       {'O', 'X', 'O', 'X', 'O', 'X'}
   };
 
+  char[][] board4 = {
+      {'O', 'O', 'O'},
+      {'O', 'O', 'O'},
+      {'O', 'O', 'O'}
+  };
+
   @org.junit.Test
   public void testCase1() {
     moe.leer.leetcode.p130.Solution solution = new Solution();
@@ -63,6 +69,22 @@ public class Test {
     System.out.println(TestUtil.prettyDeepToString(board3));
 
     assertEquals('X', board3[2][2]);
+  }
+
+  @org.junit.Test
+  public void testCase4() {
+    moe.leer.leetcode.p130.Solution solution = new Solution();
+    solution.solve(board4);
+    System.out.println(TestUtil.prettyDeepToString(board4));
+  }
+
+  @org.junit.Test
+  public void testDFS() {
+    DFSSolution solution = new DFSSolution();
+    solution.solve(board1);
+    System.out.println(TestUtil.prettyDeepToString(board1));
+    solution.solve(board4);
+    System.out.println(TestUtil.prettyDeepToString(board4));
   }
 
 }
