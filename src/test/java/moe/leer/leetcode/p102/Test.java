@@ -1,10 +1,8 @@
-package moe.leer.leetcode.P102;
+package moe.leer.leetcode.p102;
 
 import moe.leer.leetcode.TreeNode;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * @author leer
