@@ -1,5 +1,6 @@
 package moe.leer.leetcode.p322;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -8,11 +9,44 @@ import java.util.Queue;
  * Created at 6/12/19 10:01 AM
  */
 public class Solution {
-  // dp[i] presents least number pf coins that make up i
-  // dp[i] = min(dp[])
+  // @see https://leetcode.com/articles/coin-change/
+  // bottom up dp
+  // dp[i] presents least number of coins that make up i
+  // dp[i] = min(dp[i-Cj] + 1), (0 <= j <= n)
+  // Time: O(c*amount)
   public int coinChange(int[] coins, int amount) {
-    return -1;
+    if (coins.length == 0) return -1;
+    if (amount == 0) return 0;
+    int[] dp = new int[amount + 1];
+    Arrays.fill(dp, amount + 1);
+    dp[0] = 0;// dp init
+    for (int i = 1; i <= amount; i++) {
+      for (int c : coins) {
+        if (i >= c) dp[i] = Math.min(dp[i], dp[i - c] + 1);
+      }
+    }
+    return dp[amount] > amount ? -1 : dp[amount];
   }
+
+  // top down dp
+  public int coinChange2(int[] coins, int amount) {
+    if (amount < 1) return 0;
+    return helper(coins, amount, new int[amount]);
+  }
+
+  private int helper(int[] coins, int rem, int[] count) {
+    if (rem < 0) return -1;
+    if (rem == 0) return 0; // base
+    if (count[rem - 1] != 0) return count[rem - 1]; // already computed
+    int min = Integer.MAX_VALUE;
+    for (int c : coins) {
+      int res = helper(coins, rem - c, count);
+      if (res >= 0 && res < min) min = 1 + res;
+    }
+    count[rem - 1] = (min == Integer.MAX_VALUE) ? -1 : min;
+    return count[rem - 1];
+  }
+
 
   /**
    * @see moe.leer.leetcode.p279.Solution#numSquares(int)
@@ -52,6 +86,7 @@ public class Solution {
     int[] coins = new int[]{1, 2, 5};
     int[] coins1 = new int[]{2};
     System.out.println(solution.coinChangeBFS(coins, 100));
-    System.out.println(solution.coinChangeBFS(coins1, 3));
+    System.out.println(solution.coinChange(coins, 100));
+    System.out.println(solution.coinChange2(coins, 100));
   }
 }
