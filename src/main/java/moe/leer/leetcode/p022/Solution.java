@@ -1,4 +1,4 @@
-package moe.leer.leetcode.P022;
+package moe.leer.leetcode.p022;
 
 import java.util.ArrayList;
 import java.util.Collections;

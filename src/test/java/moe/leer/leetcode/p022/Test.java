@@ -1,6 +1,4 @@
-package moe.leer.leetcode.P022;
-
-import static org.junit.Assert.*;
+package moe.leer.leetcode.p022;
 
 /**
  * @author leer
