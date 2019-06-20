@@ -42,3 +42,4 @@ gradle-app.setting
 .settings/
 .idea/
 bin/
+src/main/java/moe/leer/leetcode/Main.java
