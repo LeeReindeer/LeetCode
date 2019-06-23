@@ -52,8 +52,32 @@ public class Solution {
     return ans;
   }
 
+  public List<String> letterCombinations2(String digits) {
+    List<String> ans = new ArrayList<>(digits.length() * digits.length());
+    if (digits.isEmpty()) {
+      return ans;
+    }
+    doCombination(new StringBuilder(), ans, digits);
+    return ans;
+  }
+
+  private void doCombination(StringBuilder prefix, List<String> ans, final String digits) {
+    if (prefix.length() == digits.length()) {
+      ans.add(prefix.toString());
+      return;
+    }
+    int digit = digits.charAt(prefix.length()) - '0';
+    String letters = map[digit];
+    for (char c : letters.toCharArray()) {
+      prefix.append(c);                         // add
+      doCombination(prefix, ans, digits);
+      prefix.deleteCharAt(prefix.length() - 1); // delete last added
+    }
+  }
+
   public static void main(String[] args) {
     Solution solution = new Solution();
     System.out.println(solution.letterCombinations("23").toString());
+    System.out.println(solution.letterCombinations2("23").toString());
   }
 }
