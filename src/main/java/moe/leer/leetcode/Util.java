@@ -28,4 +28,11 @@ public class Util {
     }
     return array;
   }
+
+  public static <T> void printListList(List<List<T>> lists) {
+    System.out.println(lists.size());
+    for (List<T> list : lists) {
+      System.out.println(list.toString());
+    }
+  }
 }
