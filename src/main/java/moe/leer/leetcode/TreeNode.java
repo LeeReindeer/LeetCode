@@ -75,4 +75,13 @@ public class TreeNode {
     sb.append("]\n");
     System.out.println(sb.toString());
   }
+
+  @Override
+  public String toString() {
+    return "TreeNode{" +
+        "val=" + val +
+        ", left=" + left +
+        ", right=" + right +
+        '}';
+  }
 }
