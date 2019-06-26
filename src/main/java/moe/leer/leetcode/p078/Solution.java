@@ -40,6 +40,7 @@ public class Solution {
   }
 
   private void backtracking(List<List<Integer>> ans, LinkedList<Integer> subset, int[] nums, int start) {
+    // how many combinations: select i element from n elements (1<=i<=n)
     ans.add(new ArrayList<>(subset));
     for (int i = start; i < nums.length; i++) {
       subset.add(nums[i]);

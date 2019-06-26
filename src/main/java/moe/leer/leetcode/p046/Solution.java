@@ -30,6 +30,7 @@ public class Solution {
   }
 
   private void backtracking(LinkedList<Integer> aPermute, List<List<Integer>> permutes, boolean[] visited, final int[] nums) {
+    // how many permutations: select n elements from n elements
     if (aPermute.size() == nums.length) {
       permutes.add(new ArrayList<>(aPermute));
       return;
