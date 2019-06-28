@@ -11,16 +11,16 @@ public class Test {
   public void testAtoi() {
     moe.leer.leetcode.p008.Solution solution = new Solution();
 
-    assertEquals(solution.myAtoi("0000000000012345678"), 12345678);
-    assertEquals(solution.myAtoi("+0000000000012345678"), 12345678);
-    assertEquals(solution.myAtoi("-"), 0);
-    assertEquals(solution.myAtoi("-+1"), 0);
-    assertEquals(solution.myAtoi("42"), 42);
-    assertEquals(solution.myAtoi("-42"), -42);
-    assertEquals(solution.myAtoi("     -42"), -42);
-    assertEquals(solution.myAtoi("4193 with words"), 4193);
-    assertEquals(solution.myAtoi("words and 987"), 0);
-    assertEquals(solution.myAtoi(String.valueOf(Integer.MAX_VALUE)), Integer.MAX_VALUE);
-    assertEquals(solution.myAtoi(String.valueOf((long) Integer.MAX_VALUE + 1)), Integer.MAX_VALUE);
+    assertEquals(12345678, solution.myAtoi("0000000000012345678"));
+    assertEquals(12345678, solution.myAtoi("+0000000000012345678"));
+    assertEquals(0, solution.myAtoi("-"));
+    assertEquals(0, solution.myAtoi("-+1"));
+    assertEquals(42, solution.myAtoi("42"));
+    assertEquals(-42, solution.myAtoi("-42"));
+    assertEquals(-42, solution.myAtoi("     -42"));
+    assertEquals(4193, solution.myAtoi("4193 with words"));
+    assertEquals(0, solution.myAtoi("words and 987"));
+    assertEquals(Integer.MAX_VALUE, solution.myAtoi(String.valueOf(Integer.MAX_VALUE)));
+    assertEquals(Integer.MAX_VALUE, solution.myAtoi(String.valueOf((long) Integer.MAX_VALUE + 1)));
   }
 }
