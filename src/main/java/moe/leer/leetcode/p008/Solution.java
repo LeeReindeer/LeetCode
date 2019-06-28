@@ -28,8 +28,9 @@ public class Solution {
     long result = 0L;
     int sign = 1;
     int i = 0;
-    // skip space and zero
-    while (i < str.length() && (str.charAt(i) == ' ' || str.charAt(i) == '0')) i++;
+    // skip space
+    // not skip zero, for test case: "0-1", we should return 0, because it's not a valid number.
+    while (i < str.length() && (str.charAt(i) == ' ')) i++;
     // set sign
     if (i < str.length() && (str.charAt(i) == '-' || str.charAt(i) == '+')) {
       sign = str.charAt(i++) == '-' ? -1 : 1;

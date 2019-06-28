@@ -22,5 +22,6 @@ public class Test {
     assertEquals(0, solution.myAtoi("words and 987"));
     assertEquals(Integer.MAX_VALUE, solution.myAtoi(String.valueOf(Integer.MAX_VALUE)));
     assertEquals(Integer.MAX_VALUE, solution.myAtoi(String.valueOf((long) Integer.MAX_VALUE + 1)));
+    assertEquals(0, solution.myAtoi("0-1"));
   }
 }
