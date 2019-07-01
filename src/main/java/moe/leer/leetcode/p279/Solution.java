@@ -1,9 +1,6 @@
 package moe.leer.leetcode.p279;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * @author leer
@@ -62,6 +59,25 @@ public class Solution {
     return n;
   }
 
+  // dp[i] presents the least number of perfect square numbers which sum to i
+  // dp[i] = min(dp[i], dp[i - j*j] + 1) (j*j <= i)
+  public int numSquares2(int n) {
+    List<Integer> squares = generateSquares(n);
+    // n is a square number
+    if (n == squares.get(squares.size() - 1)) return 1;
+    int[] dp = new int[n + 1];
+    Arrays.fill(dp, Integer.MAX_VALUE);
+    dp[0] = 0;
+    for (int i = 1; i <= n; i++) {
+      // For each i, it must be the sum of some number (i - j*j) and
+      // a perfect square number (j*j).
+      for (int j = 1; j * j <= i; j++) {
+        dp[i] = Math.min(dp[i], dp[i - j * j] + 1);
+      }
+    }
+    return dp[n];
+  }
+
   // generate square less than n
   private List<Integer> generateSquares(int n) {
     List<Integer> list = new ArrayList<>((int) Math.sqrt(n));
@@ -77,6 +93,11 @@ public class Solution {
 
   public static void main(String[] args) {
     Solution solution = new Solution();
-    System.out.println(solution.numSquares(3));
+    System.out.println(solution.numSquares(12));
+    System.out.println(solution.numSquares(13));
+    System.out.println(solution.numSquares(4));
+    System.out.println(solution.numSquares2(12));
+    System.out.println(solution.numSquares2(13));
+    System.out.println(solution.numSquares2(4));
   }
 }
