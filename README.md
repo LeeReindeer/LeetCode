@@ -28,6 +28,7 @@
 | 77   | Combinations                                              | Medium     | Backtracking  |               |
 | 78   | Subsets                                                   | Medium     | Backtracking  | Combination   |
 | 79   | Word Search                                               | Medium     | Backtracking  |               |
+| 88   | Merge Sorted Array                                        | Easy       | Binary Search |               |
 | 90   | Subsets II                                                | Medium     | Backtracking  |               |
 | 93   | Restore IP Addresses                                      | Medium     | Backtracking  |               |
 | 100  | Same Tree                                                 | Easy       | Binary Tree   |               |
@@ -57,6 +58,7 @@
 | 237  | Delete Node in a Linked List                              | Easy       | LinkedList    |               |
 | 242  | Valid Anagram                                             | Easy       | String        |               |
 | 257  | Binary Tree Paths                                         | Easy       | Backtracking  |               |
+| 278  | First Bad Version                                         | Easy       | Binary Search |               |
 | 279  | Perfect Squares                                           | Medium     | BFS           | DP            |
 | 283  | Move Zeros                                                | Easy       | Array         |               |
 | 303  | Range Sum Query - Immutable                               | Easy       | DP            | PrefixSum     |
