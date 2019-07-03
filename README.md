@@ -31,6 +31,7 @@
 | 88   | Merge Sorted Array                                        | Easy       | Binary Search |               |
 | 90   | Subsets II                                                | Medium     | Backtracking  |               |
 | 93   | Restore IP Addresses                                      | Medium     | Backtracking  |               |
+| 98   | Validate Binary Search Tree                               | Medium     | Binary Tree   |
 | 100  | Same Tree                                                 | Easy       | Binary Tree   |               |
 | 101  | Symmetric Tree                                            | Easy       | Binary Tree   | DFS           |
 | 102  | Binary Tree Level Order Traversal                         | Medium     | BFS           |               |
