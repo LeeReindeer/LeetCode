@@ -64,6 +64,7 @@
 | 283  | Move Zeros                                                | Easy       | Array         |               |
 | 303  | Range Sum Query - Immutable                               | Easy       | DP            | PrefixSum     |
 | 322  | Coin Change                                               | Medium     | DP            | BFS           |
+| 328  | Odd Even Linked List                                      | Medium     | LinkedList    | Two Pointer   |
 | 344  | Reverse String                                            | Easy       | String        | Two Pointer   |
 | 347  | Top K Frequent Elements                                   | Medium     | Sort          | Heap          |
 | 349  | Intersection of Two Arrays                                | Easy       | Set           | Binary Search |
