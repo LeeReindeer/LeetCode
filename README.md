@@ -31,6 +31,7 @@
 | 88   | Merge Sorted Array                                        | Easy       | Binary Search |               |
 | 90   | Subsets II                                                | Medium     | Backtracking  |               |
 | 93   | Restore IP Addresses                                      | Medium     | Backtracking  |               |
+| 94   | Binary Tree Inorder Traversal                             | Medium     | Binary Tree   | Stack         |
 | 98   | Validate Binary Search Tree                               | Medium     | Binary Tree   |
 | 100  | Same Tree                                                 | Easy       | Binary Tree   |               |
 | 101  | Symmetric Tree                                            | Easy       | Binary Tree   | DFS           |
@@ -45,8 +46,10 @@
 | 125  | Valid Palindrome                                          | Easy       | Two Pointer   |               |
 | 127  | Word Ladder                                               | Medium     | BFS           |               |
 | 128  | Longest Consecutive Sequence                              | Hard       | Map           | Unino Find    |
+| 129  | Sum Root to Leaf Numbers                                  | Medium     | DFS           | Backtracking  |
 | 130  | Surrounded Regions                                        | Medium     | DFS           | Unino Find    |
 | 136  | Single Number                                             | Easy       | Bit           | Map           |
+| 144  | Binary Tree Preorder Traversal                            | Medium     | Binary Tree   | Stack         |
 | 167  | Two Sum II - Input array is sorted                        | Easy       | Two Pointer   |               |
 | 179  | Largest Number                                            | Medium     | Sort          |               |
 | 189  | Ratate Array                                              | Easy       | Array         |               |
