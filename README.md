@@ -84,4 +84,5 @@
 | 720  | Longest Word in Dictionary                                | Easy       | String        |               |
 | 724  | Find Pivot Index                                          | Easy       | Prefix Sum    |               |
 | 746  | Min Cost Climbing Stairs                                  | Easy       | DP            |               |
+| 979  | Distribute Coins in Binary Tree                           | Medium     | DFS           |               |
 | 1025 | Divisor Game                                              | Easy       | DP            |               |
