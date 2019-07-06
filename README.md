@@ -48,6 +48,7 @@
 | 128  | Longest Consecutive Sequence                              | Hard       | Map           | Unino Find    |
 | 129  | Sum Root to Leaf Numbers                                  | Medium     | DFS           | Backtracking  |
 | 130  | Surrounded Regions                                        | Medium     | DFS           | Unino Find    |
+| 131  | Palindrome Partitioning                                   | Medium     | Backtracking  |               |
 | 136  | Single Number                                             | Easy       | Bit           | Map           |
 | 144  | Binary Tree Preorder Traversal                            | Medium     | Binary Tree   | Stack         |
 | 167  | Two Sum II - Input array is sorted                        | Easy       | Two Pointer   |               |
