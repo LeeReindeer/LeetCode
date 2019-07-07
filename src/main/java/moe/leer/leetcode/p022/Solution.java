@@ -12,7 +12,7 @@ public class Solution {
   // backtracking
   // Time: O(2^n)
   public List<String> generateParenthesis2(int n) {
-    if (n <= 1) return Collections.emptyList();
+    if (n < 1) return Collections.emptyList();
     List<String> ans = new ArrayList<>(1 << n);
     backtrack(ans, "", 0, 0, n);
     return ans;
