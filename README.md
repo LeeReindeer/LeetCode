@@ -18,6 +18,7 @@
 | 39   | Combination Sum                                           | Medium     | Backtracking  |               |
 | 40   | Combination Sum II                                        | Medium     | Backtracking  |               |
 | 46   | Permutations                                              | Medium     | Backtracking  | Permutation   |
+| 47   | Permutations II                                           | Medium     | Backtracking  | Permutation   |
 | 48   | Rotate Image                                              | Medium     | Array         |               |
 | 50   | Pow(x, n)                                                 | Medium     | Recursive     |               |
 | 51   | N-Queens                                                  | Hard       | Backtracking  |               |

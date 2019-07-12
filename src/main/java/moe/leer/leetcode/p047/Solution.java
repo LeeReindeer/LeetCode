@@ -1,4 +1,4 @@
-package moe.leer.leetcode.p046;
+package moe.leer.leetcode.p047;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,17 +6,12 @@ import java.util.List;
 
 /**
  * @author leer
- * Created at 6/25/19 1:51 PM
+ * Created at 7/12/19 10:37 AM
  * <p>
- * 46. Permutations
- * Given a collection of distinct integers, return all possible permutations.
- * <p>
- * The number of permutations is n!/(n-r)! = n!(cause n == r)
+ * The number of permutations is n!/x! * y!...  (x and y are the size of duplicated numbers )
  */
 public class Solution {
-
-
-  public List<List<Integer>> permute(int[] nums) {
+  public List<List<Integer>> permuteUnique(int[] nums) {
     int size = 1;
     for (int i = 2; i <= nums.length; i++) {
       size *= i;
@@ -30,12 +25,15 @@ public class Solution {
   }
 
   private void backtracking(LinkedList<Integer> aPermute, List<List<Integer>> permutes, boolean[] visited, final int[] nums) {
-    // how many permutations: select n elements from n elements
     if (aPermute.size() == nums.length) {
       permutes.add(new ArrayList<>(aPermute));
       return;
     }
     for (int i = 0; i < nums.length; i++) {
+      //  only use current number when previous identical number is used
+      if (i != 0 && nums[i] == nums[i - 1] && !visited[i - 1]) continue;
+      // both condition is ok, but this one will travel some case never reach the base case
+      // if (i != 0 && nums[i] == nums[i - 1] && visited[i - 1]) continue;
       //avoid repeated number
       if (visited[i]) continue;
       visited[i] = true;
@@ -47,7 +45,7 @@ public class Solution {
   }
 
   public static void main(String[] args) {
-    Solution solution = new Solution();
+    moe.leer.leetcode.p046.Solution solution = new moe.leer.leetcode.p046.Solution();
     List<List<Integer>> permutes = solution.permute(new int[]{1, 1, 1, 2, 3});
     System.out.println(permutes.size());
     for (List<Integer> list : permutes) {

@@ -6,6 +6,8 @@ import java.util.LinkedList;
 /**
  * @author leer
  * Created at 7/10/19 9:32 AM
+ *
+ * @see moe.leer.leetcode.p047.Solution#permuteUnique(int[])
  */
 public class Solution {
   private int total;
