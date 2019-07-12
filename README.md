@@ -91,5 +91,6 @@
 | 724  | Find Pivot Index                                          | Easy       | Prefix Sum    |               |
 | 746  | Min Cost Climbing Stairs                                  | Easy       | DP            |               |
 | 979  | Distribute Coins in Binary Tree                           | Medium     | DFS           |               |
+| 988  | Smallest String Starting From Leaf                        | Medium     | Backtracking  |               |
 | 1025 | Divisor Game                                              | Easy       | DP            |               |
 | 1079 | Letter Tile Possibilities                                 | Medium     | Backtracking  |               |
