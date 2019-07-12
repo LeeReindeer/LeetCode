@@ -11,6 +11,7 @@
 | 17   | Letter Combinations of a Phone Number                     | Medium     | Backtracking  |               |
 | 19   | Remove Nth Node From End of List                          | Medium     | Two Pointer   |               |
 | 20   | Valid Parentheses                                         | Easy       | Stack         |               |
+| 21   | Merge Two Sorted Lists                                    | Easy       | LinkedList    |               |
 | 22   | Generate Parentheses                                      | Medium     | Backtracking  |               |
 | 26   | Remove Duplicates from Sorted Array                       | Easy       | Two Pointer   |               |
 | 36   | Valid Sudoku                                              | Medium     | Array         |               |
