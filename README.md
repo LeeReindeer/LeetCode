@@ -13,6 +13,7 @@
 | 20   | Valid Parentheses                                         | Easy       | Stack         |               |
 | 21   | Merge Two Sorted Lists                                    | Easy       | LinkedList    |               |
 | 22   | Generate Parentheses                                      | Medium     | Backtracking  |               |
+| 24   | Swap Nodes in Pairs                                       | Easy       | LinkedList    |               |
 | 26   | Remove Duplicates from Sorted Array                       | Easy       | Two Pointer   |               |
 | 36   | Valid Sudoku                                              | Medium     | Array         |               |
 | 39   | Combination Sum                                           | Medium     | Backtracking  |               |
