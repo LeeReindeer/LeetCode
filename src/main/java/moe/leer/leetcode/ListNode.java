@@ -12,6 +12,16 @@ public class ListNode {
     val = x;
   }
 
+  public static ListNode buildList(int[] array) {
+    ListNode head = new ListNode(array[0]);
+    ListNode p = head;
+    for (int i = 1; i < array.length; i++) {
+      p.next = new ListNode(array[i]);
+      p = p.next;
+    }
+    return head;
+  }
+
   public static void printLinkedList(ListNode head) {
     System.out.print(listToString(head));
   }

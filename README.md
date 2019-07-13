@@ -32,6 +32,7 @@
 | 77   | Combinations                                              | Medium     | Backtracking  |               |
 | 78   | Subsets                                                   | Medium     | Backtracking  | Combination   |
 | 79   | Word Search                                               | Medium     | Backtracking  |               |
+| 83   | Remove Duplicates from Sorted List                        | Easy       | LinkedList    |               |
 | 88   | Merge Sorted Array                                        | Easy       | Binary Search |               |
 | 90   | Subsets II                                                | Medium     | Backtracking  |               |
 | 93   | Restore IP Addresses                                      | Medium     | Backtracking  |               |
