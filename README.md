@@ -27,6 +27,7 @@
 | 62   | Unique Paths                                              | Medium     | DP            |               |
 | 64   | Minimum Path Sum                                          | Medium     | DP            |               |
 | 66   | Plus One                                                  | Easy       | Array         |               |
+| 67   | Add Binary                                                | Easy       | Math          |               |
 | 69   | Sqrt(x)                                                   | Easy       | Binary Search |               |
 | 70   | Climbing Stairs                                           | Easy       | DP            |               |
 | 77   | Combinations                                              | Medium     | Backtracking  |               |
