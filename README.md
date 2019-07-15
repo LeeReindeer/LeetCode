@@ -42,6 +42,7 @@
 | 100  | Same Tree                                                 | Easy       | Binary Tree   |               |
 | 101  | Symmetric Tree                                            | Easy       | Binary Tree   | DFS           |
 | 102  | Binary Tree Level Order Traversal                         | Medium     | BFS           |               |
+| 103  | Binary Tree Zigzag Level Order Traversal                  | Medium     | Binary Tree   |               |
 | 104  | Maximum Depth of Binary Tree                              | Easy       | DFS           |               |
 | 105  | Construct Binary Tree from Preorder and Inorder Traversal | Medium     | Binary Tree   | DFS           |
 | 112  | Path Sum                                                  | Easy       | DFS           |               |
