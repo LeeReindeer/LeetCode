@@ -91,6 +91,7 @@
 | 684  | Redundant Connection                                      | Medium     | Unino Find    |               |
 | 685  | Redundant Connection II                                   | Hard       | Unino Find    |               |
 | 695  | Max Area of Island                                        | Medium     | DFS           |               |
+| 704  | Binary Search                                             | Easy       | Binary Search |               |
 | 720  | Longest Word in Dictionary                                | Easy       | String        |               |
 | 724  | Find Pivot Index                                          | Easy       | Prefix Sum    |               |
 | 746  | Min Cost Climbing Stairs                                  | Easy       | DP            |               |
