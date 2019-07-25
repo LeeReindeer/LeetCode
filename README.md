@@ -5,6 +5,7 @@
 | 1    | Two Sum                                                   | Easy       | Array         |               |
 | 2    | Add Two Numbers                                           | Medium     | LinkedList    |               |
 | 3    | Longest Substring Without Repeating Characters            | Medium     | Sliding Window| Backtracking  |
+| 4    | Median Of Two Sorted Arrays                               | Hard       | Sort          |               |
 | 7    | Reverse Integer                                           | Easy       | String        |               |
 | 8    | String to Integer (atoi)                                  | Medium     | String        |               |
 | 10   | Regular Expression Matching                               | Hard       | DP            |               |
