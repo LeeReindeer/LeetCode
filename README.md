@@ -96,6 +96,7 @@
 | 720  | Longest Word in Dictionary                                | Easy       | String        |               |
 | 724  | Find Pivot Index                                          | Easy       | Prefix Sum    |               |
 | 746  | Min Cost Climbing Stairs                                  | Easy       | DP            |               |
+| 793  | Daily Temperatures                                        | Medium     | Stack         |               |
 | 979  | Distribute Coins in Binary Tree                           | Medium     | DFS           |               |
 | 988  | Smallest String Starting From Leaf                        | Medium     | Backtracking  |               |
 | 1025 | Divisor Game                                              | Easy       | DP            |               |
