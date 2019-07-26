@@ -6,6 +6,7 @@
 | 2    | Add Two Numbers                                           | Medium     | LinkedList    |               |
 | 3    | Longest Substring Without Repeating Characters            | Medium     | Sliding Window| Backtracking  |
 | 4    | Median Of Two Sorted Arrays                               | Hard       | Sort          |               |
+| 5    | Longest Palindromic Substring                             | Medium     | String        | DP            |
 | 7    | Reverse Integer                                           | Easy       | String        |               |
 | 8    | String to Integer (atoi)                                  | Medium     | String        |               |
 | 10   | Regular Expression Matching                               | Hard       | DP            |               |
