@@ -11,6 +11,7 @@
 | 8    | String to Integer (atoi)                                  | Medium     | String        |               |
 | 10   | Regular Expression Matching                               | Hard       | DP            |               |
 | 14   | Longest Common Prefix                                     | Easy       | String        |               |
+| 15   | 3Sum                                                      | Medium     |               |               |
 | 17   | Letter Combinations of a Phone Number                     | Medium     | Backtracking  |               |
 | 19   | Remove Nth Node From End of List                          | Medium     | Two Pointer   |               |
 | 20   | Valid Parentheses                                         | Easy       | Stack         |               |
