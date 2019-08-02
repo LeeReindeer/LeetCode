@@ -79,6 +79,7 @@
 | 278  | First Bad Version                                         | Easy       | Binary Search |               |
 | 279  | Perfect Squares                                           | Medium     | BFS           | DP            |
 | 283  | Move Zeros                                                | Easy       | Array         |               |
+| 300  | Longest Increasing Subsequence                            | Medium     | DP            |               |
 | 303  | Range Sum Query - Immutable                               | Easy       | DP            | PrefixSum     |
 | 322  | Coin Change                                               | Medium     | DP            | BFS           |
 | 328  | Odd Even Linked List                                      | Medium     | LinkedList    | Two Pointer   |
