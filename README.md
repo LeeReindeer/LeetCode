@@ -91,6 +91,7 @@
 | 413  | Arithmetic Slices                                         | Medium     | DP            |               |
 | 416  | Partition Equal Subset Sum                                | Medium     | DP            | 0-1 knapsack  |
 | 494  | Target Sum                                                | Medium     | DP            |               |
+| 518  | Coin Change 2                                             | Medium     | DP            |               |
 | 547  | Friend Circles                                            | Medium     | Unino Find    |               |
 | 572  | Subtree of Another Tree                                   | Easy       | Binary Tree   | DFS           |
 | 684  | Redundant Connection                                      | Medium     | Unino Find    |               |
