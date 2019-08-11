@@ -9,6 +9,7 @@
 | 5    | Longest Palindromic Substring                             | Medium     | String        | DP            |
 | 7    | Reverse Integer                                           | Easy       | String        |               |
 | 8    | String to Integer (atoi)                                  | Medium     | String        |               |
+| 9    | Palindrome Number                                         | Easy       | String        | Two Pointer   |
 | 10   | Regular Expression Matching                               | Hard       | DP            |               |
 | 14   | Longest Common Prefix                                     | Easy       | String        |               |
 | 15   | 3Sum                                                      | Medium     |               |               |
