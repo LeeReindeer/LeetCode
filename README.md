@@ -92,6 +92,7 @@
 | 387  | First Unique Character in a String                        | Easy       | Map           |               |
 | 413  | Arithmetic Slices                                         | Medium     | DP            |               |
 | 416  | Partition Equal Subset Sum                                | Medium     | DP            | 0-1 knapsack  |
+| 455  | Assign Cookies                                            | Easy       | Greedy        |               |
 | 494  | Target Sum                                                | Medium     | DP            |               |
 | 518  | Coin Change 2                                             | Medium     | DP            |               |
 | 547  | Friend Circles                                            | Medium     | Unino Find    |               |
