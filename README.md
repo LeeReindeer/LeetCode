@@ -89,6 +89,7 @@
 | 347  | Top K Frequent Elements                                   | Medium     | Sort          | Heap          |
 | 349  | Intersection of Two Arrays                                | Easy       | Set           | Binary Search |
 | 350  | Intersection of Two Arrays II                             | Easy       | Map           |               |
+| 378  | Kth Smallest Element in a Sorted                          | Medium     | Binary Search |               |
 | 387  | First Unique Character in a String                        | Easy       | Map           |               |
 | 413  | Arithmetic Slices                                         | Medium     | DP            |               |
 | 416  | Partition Equal Subset Sum                                | Medium     | DP            | 0-1 knapsack  |
