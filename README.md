@@ -63,6 +63,7 @@
 | 130  | Surrounded Regions                                        | Medium     | DFS           | Unino Find    |
 | 131  | Palindrome Partitioning                                   | Medium     | Backtracking  |               |
 | 136  | Single Number                                             | Easy       | Bit           | Map           |
+| 142  | Linked List Cycle II                                      | Medium     | Two Pointer   | LinkedList    |
 | 144  | Binary Tree Preorder Traversal                            | Medium     | Binary Tree   | Stack         |
 | 160  | Intersection of Two Linked Lists                          | Easy       | LinkedList    |               |
 | 167  | Two Sum II - Input array is sorted                        | Easy       | Two Pointer   |               |
