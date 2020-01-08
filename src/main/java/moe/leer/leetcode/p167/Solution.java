@@ -3,6 +3,7 @@ package moe.leer.leetcode.p167;
 /**
  * @author leer
  * Created at 5/11/19 9:21 PM
+ * 167.Two Sum II - Input array is sorted
  * <p>
  * Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
  * <p>
@@ -20,14 +21,11 @@ package moe.leer.leetcode.p167;
  */
 public class Solution {
   public int[] twoSum(int[] numbers, int target) {
-    int[] ans = new int[2];
     int i = 0;
     int j = numbers.length - 1;
     while (i < j) {
       if (numbers[i] + numbers[j] == target) {
-        ans[0] = i + 1;
-        ans[1] = j + 1;
-        break;
+        return new int[]{i + 1, j + 1};
       } else if (numbers[i] + numbers[j] > target) {
         // because the input is sorted, decrease this pointer
         j -= 1;
@@ -35,6 +33,6 @@ public class Solution {
         i += 1;
       }
     }
-    return ans;
+    return null;
   }
 }
