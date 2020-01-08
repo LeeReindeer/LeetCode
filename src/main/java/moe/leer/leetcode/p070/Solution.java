@@ -33,20 +33,19 @@ public class Solution {
   public int climbStairs(int n) {
     if (n <= 2) return n;
     int[] dp = new int[n];
-    dp[0] = 1;
+    dp[0] = 1; // the first stair case
     dp[1] = 2;
     for (int i = 2; i < n; i++) {
       dp[i] = dp[i - 1] + dp[i - 2];
     }
-    return dp[n - 1];
+    return dp[n - 1]; // the top stair
   }
 
   public int climbStairs2(int n) {
     if (n <= 2) return n;
-    int ototoi = 1;
-    int kinou = 2;
+    int ototoi = 1, kinou = 2, kyou = 0;
     for (int i = 2; i < n; i++) {
-      int kyou = ototoi + kinou;
+      kyou = ototoi + kinou;
       ototoi = kinou;
       kinou = kyou;
     }
