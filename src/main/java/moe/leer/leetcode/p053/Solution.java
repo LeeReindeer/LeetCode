@@ -11,7 +11,6 @@ class Solution {
   // Time: O(n), Space: O(n)
   public int maxSubArray(int[] nums) {
     if (nums.length == 0) return 0;
-    if (nums.length == 1) return nums[0];
     int[] dp = new int[nums.length];
     dp[0] = nums[0];
     int max = nums[0];
@@ -38,6 +37,31 @@ class Solution {
     return max;
   }
 
-  public static void main(String[] args) {
+  //O(n^3)
+  public int maxSubArray3(int[] nums) {
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = i; j < nums.length; j++) {
+        int cur = 0;
+        for (int k = i; k < j; k++) {
+          cur += nums[k];
+        }
+        if (cur > max) max = cur;
+      }
+    }
+    return max;
+  }
+
+  // O(n^2)
+  public int maxSubArray4(int[] nums) {
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < nums.length; i++) {
+      int cur = 0;
+      for (int j = i; j < nums.length; j++) {
+        cur += nums[j];
+        if (cur > max) max = cur;
+      }
+    }
+    return max;
   }
 }
