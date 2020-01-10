@@ -101,6 +101,7 @@
 | 524  | Longest Word in Dictionary through Deleting               | Medium     | Two Pointer   | String        |
 | 547  | Friend Circles                                            | Medium     | Unino Find    |               |
 | 572  | Subtree of Another Tree                                   | Easy       | Binary Tree   | DFS           |
+| 633  | Sum of Square Numbers                                     | Medium     | Two Pointer   |               |
 | 647  | Palindromic Substrings                                    | Medium     | Two Pointer   |               |
 | 684  | Redundant Connection                                      | Medium     | Unino Find    |               |
 | 685  | Redundant Connection II                                   | Hard       | Unino Find    |               |
