@@ -30,7 +30,6 @@ public class Solution {
     }
     for (int j = 1; j <= nums[start]; j++) {
       int next = start + j;
-      System.out.println("next: " + next);
       if (next < nums.length)
         if (backtracking(next, nums))
           return true;

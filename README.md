@@ -31,6 +31,7 @@
 | 51   | N-Queens                                                  | Hard       | Backtracking  |               |
 | 53   | Maximum Subarray                                          | Easy       | DP            | Array         |
 | 55   | Jump Game                                                 | Medium     |               | Backtracking  |
+| 56   | Merge Intervals                                           | Medium     | Sort          | Greedy        |
 | 62   | Unique Paths                                              | Medium     | DP            |               |
 | 64   | Minimum Path Sum                                          | Medium     | DP            |               |
 | 66   | Plus One                                                  | Easy       | Array         |               |
