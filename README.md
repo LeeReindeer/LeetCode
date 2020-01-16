@@ -41,6 +41,7 @@
 | 77   | Combinations                                              | Medium     | Backtracking  |               |
 | 78   | Subsets                                                   | Medium     | Backtracking  | Combination   |
 | 79   | Word Search                                               | Medium     | Backtracking  |               |
+| 80   | Remove Duplicates from Sorted Array II                    | Medium     | Two Pointer   |               |
 | 83   | Remove Duplicates from Sorted List                        | Easy       | LinkedList    |               |
 | 88   | Merge Sorted Array                                        | Easy       | Binary Search |               |
 | 90   | Subsets II                                                | Medium     | Backtracking  |               |
