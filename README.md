@@ -94,6 +94,7 @@
 | 347  | Top K Frequent Elements                                   | Medium     | Sort          | Heap          |
 | 349  | Intersection of Two Arrays                                | Easy       | Set           | Binary Search |
 | 350  | Intersection of Two Arrays II                             | Easy       | Map           |               |
+| 354  | Reverse Vowels of a String                                | Easy       | Two Pointer   |               |
 | 378  | Kth Smallest Element in a Sorted                          | Medium     | Binary Search |               |
 | 387  | First Unique Character in a String                        | Easy       | Map           |               |
 | 413  | Arithmetic Slices                                         | Medium     | DP            |               |
