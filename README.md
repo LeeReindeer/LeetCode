@@ -104,7 +104,9 @@
 | 494  | Target Sum                                                | Medium     | DP            |               |
 | 518  | Coin Change 2                                             | Medium     | DP            |               |
 | 524  | Longest Word in Dictionary through Deleting               | Medium     | Two Pointer   | String        |
+| 530  | Minimum Absolute Difference in BST                        | Easy       | BST           | InOrder       |
 | 547  | Friend Circles                                            | Medium     | Unino Find    |               |
+| 566  | Reshape the Matrix                                        | Easy       | Arrays        |               |
 | 572  | Subtree of Another Tree                                   | Easy       | Binary Tree   | DFS           |
 | 633  | Sum of Square Numbers                                     | Medium     | Two Pointer   |               |
 | 647  | Palindromic Substrings                                    | Medium     | Two Pointer   |               |
